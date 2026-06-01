@@ -1,0 +1,57 @@
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+.container{max-width:700px;margin:auto;padding:20px;}
+#slideshow{
+width:100%;
+max-width:350px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+/* smooth fade transition for slideshow image */
+#slideshow{
+	transition: opacity 0.6s ease;
+	display:block;
+	margin:16px auto;
+	opacity:1;
+}
+#countdown{font-size:2rem;font-weight:bold;margin:20px 0;}
+button{
+padding:12px 24px;
+border:none;
+border-radius:30px;
+font-size:1rem;
+cursor:pointer;
+}
+.hidden{display:none;}
+.letter{
+background: rgba(255,255,255,0.98);
+color: #222;
+padding:28px 26px;
+border-radius:16px;
+text-align:left;
+line-height:1.8;
+font-family: 'Georgia', 'Times New Roman', serif;
+font-size:1.05rem;
+max-width:100%;
+box-shadow:0 8px 30px rgba(0,0,0,0.25);
+white-space:pre-wrap;
+word-wrap:break-word;
+hyphens:auto;
+margin:18px 0;
+}
+.heart{
+position:fixed;
+bottom:-20px;
+animation:float 8s linear infinite;
+}
+@keyframes float{
+from{transform:translateY(0)}
+to{transform:translateY(-110vh)}
+}
